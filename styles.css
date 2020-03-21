@@ -3,6 +3,7 @@ footer {
     position: absolute;
     width: 100%;
     color: lightgray;
+    bottom: 0px;
 }
 img{
     padding-right: 20px;
@@ -15,9 +16,61 @@ body{
     background-color: #73c6b6;
 }
 
+table{
+    background-color: yellowgreen; 
+    width: 50%; 
+    margin:auto; 
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 5px;
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
 .resume{
     margin-left: 38%;
     width: 50%;
+}
+
+
+.footer-right{
+    right: 0;
+    position: absolute;
+    padding-right: 10px;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.school{
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.program{
+    font-style: italic;
+}
+
+.capstone{
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.academics{
+    text-align: center;
 }
 
 .para {
