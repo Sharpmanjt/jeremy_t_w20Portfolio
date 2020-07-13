@@ -38,7 +38,12 @@ th, td{
     text-align: center;
 }
 .resume{
-    margin-left: 38%;
+    margin-left: 50%;
+    width: 50%;
+}
+
+.resume2{
+    margin-left: 48%;
     width: 50%;
 }
 

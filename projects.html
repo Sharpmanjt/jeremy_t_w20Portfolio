@@ -14,50 +14,81 @@
 <br>
 
 <h2 class="academics">Projects</h2>
+<br>
+<script>
+    var x = 0
+    function next(x) {
+        if (x>= 2){
+            return 0
+        }
+        return x+1
+    }
 
-<table>
-    <thead>
-    <tr>
-        <th>Course</th>
-        <th>Project</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>AI with Python</td>
-        <td><a href="https://github.com/Sharpmanjt/AI_Project" target="_blank">Blackjack Game</a>:
-            Using logistic regression, we created a blackjack game that would learn from winning actions to
-            improve.</td>
-    </tr>
-    <tr>
-        <td>Full Stack Development</td>
-        <td><a href="https://github.com/Sharpmanjt/gamer_lobby" target="_blank">Gamer Lobby</a>:
-            We created a single page app with angular to simulate a basic gaming lobby room.</td>
-    </tr>
-    <tr>
-        <td>Full Stack Development</td>
-        <td><a href="https://github.com/Sharpmanjt/heroku_mean_stack" target="_blank">Aliens Game</a>:
-            Using Heroku and Angular, we created a prototype for a two player game with Socket.io.</td>
-    </tr>
-    <tr>
-        <td>Mobile App Development - Android</td>
-        <td><a href="https://github.com/verolemieux/comp3074-project" target="_blank">Backpack Buddy</a>:
-            We created a mobile app for android to help users keep track of items, plan which items they would
-            take on a route, and plan a route</td>
-    </tr>
-    <tr>
-        <td>Web Development</td>
-        <td><a href="https://github.com/verolemieux/comp3095-assignment" target="_blank">JSP Project</a>:
-            Using servlets, java beans, and jsps, we created a small website for administration that supported
-            login, registration, and password resets via email.</td>
-    </tr>
-    <tr>
-        <td>Web Development</td>
-        <td><a href="https://github.com/verolemieux/techknowpro" target="_blank">Tech Know Pro</a>:
-            With ASP.net, we created an incident management application with access multiple user classes.</td>
-    </tr>
-    </tbody>
-</table>
+    function previous(x) {
+        if (x<= 0){
+            return 2
+        }
+        return x-1
+    }
+
+</script>
+<div class="resume2">
+    <button onclick="x = previous(x); container.innerHTML=arr[x]"> < </button> &nbsp;
+    <button onclick="x = next(x); container.innerHTML=arr[x]"> > </button>
+</div>
+<p></p>
+<div id="container">
+    <script>
+        var container = document.getElementById("container")
+    </script>
+    <script>
+
+        var arr = []
+        arr[0] = '<h4 class="academics">Blackjack Game with AI - <a href="https://github.com/jeremythibeau/AI_Project" ' +
+            'target="_blank"> Github Link</a></h4> <p></p>' +
+            '<div style="text-align: center">' +
+            '<img src="documents/blackjack1.JPG" alt="blackjack picture">' +
+            '<img src="documents/blackjack2.JPG" alt="blackjack picture">' +
+            '<img src="documents/blackjack3.JPG" alt="blackjack picture"> <p>' +
+            '<div class="para">' +
+            'For my portion of this project, I was in charge of translating the game of blackjack into python' +
+            ' code. I set up the game actions and rules. A player would play against the computer, and the computer' +
+            ' would use logistic regression to make a decision for its game action. The more the game was played, the computer' +
+            ' would store the actions of the winner to expand its learning dataset.' +
+            '</div' +
+            '</div>'
+
+        arr[1] = '<h4 class="academics">Computer Game with Socket IO - <a href="https://github.com/verolemieux/comp3133assignment" ' +
+            'target="_blank"> Github Link</a></h4> <p></p>' +
+            '<div style="text-align: center">' +
+            '<img src="documents/game1.png" alt="game picture">' +
+            '<div class="para">' +
+            'In this project I was responsible for creating the game actions that allowed the game elements to move across' +
+            ' the screen. The values would be tracked on the server so that when an element moved for one player, it would move ' +
+            'for both players playing on different computers. I was also in charge of timing the animations to ensure collisions for ' +
+            'game elements were tracked properly and the game state was updated accordingly. '
+            '</div' +
+            '</div>'
+
+        arr[2] = '<h4 class="academics">Backpack Buddy - Android Mobile App - <a href="https://github.com/verolemieux/comp3074-project" ' +
+            'target="_blank"> Github Link</a></h4> <p></p>' +
+            '<div style="text-align: center">' +
+            '<img src="documents/backpack1.JPG" alt="game picture">' +
+            '<img src="documents/backpack2.JPG" alt="game picture">' +
+            '<img src="documents/backpack3.JPG" alt="game picture"> <p>' +
+            '<div class="para">' +
+            'This group project was an application to help people keep track of different items and events. My job for this project' +
+                ' was to help set up the database structure, and ensure that data flowed correctly between different views in the app. ' +
+                ' I was also responsible for setting up the generation of a QR code for items a user would make and the ability to export ' +
+                "the generated codes by app from the user's phone."
+        '</div' +
+        '</div>'
+
+        container.innerHTML=arr[0]
+    </script>
+</div>
+<p>
+
 
 <script>includeHTML()</script>
 <div style="position: absolute;
